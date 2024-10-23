@@ -1,13 +1,27 @@
 {
   "name": "pltraining-dirtree",
   "version": "0.3.0",
-  "author": "Alex Cline \u003calex.cline@gmail.com\u003e, Puppetlabs Education Team \u003ceduteam@puppetlabs.com\u003e",
-  "license": "Apache License, Version 2.0",
-  "operatingsystem_support": [],
-  "project_page": "https://github.com/puppetlabs/pltraining-dirtree",
-  "requirements": [],
+  "author": "Alex Cline <alex.cline@gmail.com>, Puppetlabs Education Team <eduteam@puppetlabs.com>",
+  "summary": "This module provides the dirtree function and resource type, both used for recursive directory management.",
+  "license": "Apache-2.0",
   "source": "git@github.com:puppetlabs/pltraining-dirtree.git",
-  "summary": "This includes a dirtree function to builds an array of directories from a full directory path or an array of full directory paths to be used as a file resource title. It also includes a dirtree resource type which can ensure the existance only of a full directory path.",
-  "tags": [],
-  "dependencies": []
+  "project_page": "https://github.com/puppetlabs/pltraining-dirtree",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 7.24 < 9.0.0"
+    }
+  ],
+  "tags": [
+
+  ],
+  "pdk-version": "3.3.0",
+  "template-url": "pdk-default#3.3.0",
+  "template-ref": "tags/3.3.0-0-g5d17ec1"
 }

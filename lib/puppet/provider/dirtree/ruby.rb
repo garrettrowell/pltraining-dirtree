@@ -1,12 +1,15 @@
 Puppet::Type.type(:dirtree).provide(:ruby) do
   desc 'Ruby provider for the dirtree type'
 
+  mk_resource_methods
+
   def exists?
     File.directory? resource[:path]
   end
 
   def create
-    if resource[:parents]
+    case resource[:parents]
+    when :true
       FileUtils.mkdir_p resource[:path]
     else
       FileUtils.mkdir resource[:path]
